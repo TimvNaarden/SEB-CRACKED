@@ -1,7 +1,7 @@
 # Safe Exam Browser, Version 3.x
 
 This is a unofficial fork of Safe Exam Browser that allows you to do various actions, that were blocked before. Such as multiple displays, using alt + tab, or running it with services like Discord in the background.
-Currently in Development. Once ready it can be downloaded at the releases pages.
+It can be downloaded at the release page.
 
 # How to Compile Yourself
 
