@@ -6,9 +6,9 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System;
 using Microsoft.Win32;
 using SafeExamBrowser.Logging.Contracts;
+using System;
 
 namespace SafeExamBrowser.Lockdown.FeatureConfigurations.RegistryConfigurations.UserHive
 {
@@ -18,7 +18,7 @@ namespace SafeExamBrowser.Lockdown.FeatureConfigurations.RegistryConfigurations.
 		protected string SID { get; }
 		protected string UserName { get; }
 
-		protected override RegistryKey RootKey => Registry.Users; 
+		protected override RegistryKey RootKey => Registry.Users;
 
 		public UserHiveConfiguration(Guid groupId, ILogger logger, string sid, string userName) : base(groupId, logger)
 		{

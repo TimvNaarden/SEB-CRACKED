@@ -6,11 +6,11 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+using SafeExamBrowser.Configuration.Contracts.Cryptography;
 using System;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using SafeExamBrowser.Configuration.Contracts.Cryptography;
 
 namespace SafeExamBrowser.Configuration.Cryptography
 {

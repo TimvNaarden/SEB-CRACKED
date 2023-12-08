@@ -6,15 +6,15 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+using SafeExamBrowser.Logging.Contracts;
+using SafeExamBrowser.WindowsApi.Contracts;
+using SafeExamBrowser.WindowsApi.Types;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Threading;
-using SafeExamBrowser.Logging.Contracts;
-using SafeExamBrowser.WindowsApi.Contracts;
-using SafeExamBrowser.WindowsApi.Types;
 
 namespace SafeExamBrowser.WindowsApi
 {

@@ -6,6 +6,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+using SafeExamBrowser.Core.Contracts.Resources.Icons;
 using System;
 using System.Drawing;
 using System.Drawing.Imaging;
@@ -16,7 +17,6 @@ using System.Windows.Documents;
 using System.Windows.Interop;
 using System.Windows.Markup;
 using System.Windows.Media.Imaging;
-using SafeExamBrowser.Core.Contracts.Resources.Icons;
 using Brushes = System.Windows.Media.Brushes;
 using Image = System.Windows.Controls.Image;
 

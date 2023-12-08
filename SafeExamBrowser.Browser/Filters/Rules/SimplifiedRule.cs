@@ -6,10 +6,10 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System;
-using System.Text.RegularExpressions;
 using SafeExamBrowser.Browser.Contracts.Filters;
 using SafeExamBrowser.Settings.Browser.Filter;
+using System;
+using System.Text.RegularExpressions;
 
 namespace SafeExamBrowser.Browser.Filters.Rules
 {

@@ -6,12 +6,12 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+using SafeExamBrowser.Lockdown.Contracts;
+using SafeExamBrowser.Logging.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.ServiceProcess;
-using SafeExamBrowser.Lockdown.Contracts;
-using SafeExamBrowser.Logging.Contracts;
 
 namespace SafeExamBrowser.Lockdown.FeatureConfigurations.ServiceConfigurations
 {

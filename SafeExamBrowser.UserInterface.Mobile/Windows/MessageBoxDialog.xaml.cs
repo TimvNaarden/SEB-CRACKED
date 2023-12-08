@@ -6,14 +6,14 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+using SafeExamBrowser.I18n.Contracts;
+using SafeExamBrowser.UserInterface.Contracts.MessageBox;
 using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.Windows;
 using System.Windows.Interop;
 using System.Windows.Media.Imaging;
-using SafeExamBrowser.I18n.Contracts;
-using SafeExamBrowser.UserInterface.Contracts.MessageBox;
 using MessageBoxResult = SafeExamBrowser.UserInterface.Contracts.MessageBox.MessageBoxResult;
 
 namespace SafeExamBrowser.UserInterface.Mobile.Windows

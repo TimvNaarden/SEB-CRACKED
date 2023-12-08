@@ -6,15 +6,15 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+using SafeExamBrowser.Logging.Contracts;
+using SafeExamBrowser.SystemComponents.Contracts.Keyboard;
+using SafeExamBrowser.SystemComponents.Contracts.Keyboard.Events;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Windows.Forms;
 using System.Windows.Input;
-using SafeExamBrowser.Logging.Contracts;
-using SafeExamBrowser.SystemComponents.Contracts.Keyboard;
-using SafeExamBrowser.SystemComponents.Contracts.Keyboard.Events;
 
 namespace SafeExamBrowser.SystemComponents.Keyboard
 {

@@ -6,11 +6,11 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System;
 using SafeExamBrowser.Applications.Contracts;
 using SafeExamBrowser.Applications.Contracts.Events;
 using SafeExamBrowser.Core.Contracts.Resources.Icons;
 using SafeExamBrowser.WindowsApi.Contracts;
+using System;
 
 namespace SafeExamBrowser.Applications
 {

@@ -6,17 +6,17 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using SafeExamBrowser.Logging.Contracts;
+using SafeExamBrowser.Server.Contracts.Data;
+using SafeExamBrowser.Server.Data;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using SafeExamBrowser.Logging.Contracts;
-using SafeExamBrowser.Server.Contracts.Data;
-using SafeExamBrowser.Server.Data;
 
 namespace SafeExamBrowser.Server
 {

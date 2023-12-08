@@ -6,12 +6,12 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+using SafeExamBrowser.Configuration.Contracts;
+using SafeExamBrowser.Lockdown.Contracts;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using SafeExamBrowser.Configuration.Contracts;
-using SafeExamBrowser.Lockdown.Contracts;
 
 namespace SafeExamBrowser.ResetUtility.Procedure
 {

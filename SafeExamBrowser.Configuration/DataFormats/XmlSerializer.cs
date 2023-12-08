@@ -6,6 +6,10 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+using SafeExamBrowser.Configuration.Contracts;
+using SafeExamBrowser.Configuration.Contracts.Cryptography;
+using SafeExamBrowser.Configuration.Contracts.DataFormats;
+using SafeExamBrowser.Logging.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -13,10 +17,6 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Xml;
-using SafeExamBrowser.Configuration.Contracts;
-using SafeExamBrowser.Configuration.Contracts.Cryptography;
-using SafeExamBrowser.Configuration.Contracts.DataFormats;
-using SafeExamBrowser.Logging.Contracts;
 
 namespace SafeExamBrowser.Configuration.DataFormats
 {

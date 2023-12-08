@@ -6,10 +6,6 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System.Collections.Generic;
-using System.Threading;
-using System.Windows;
-using System.Windows.Media;
 using FontAwesome.WPF;
 using SafeExamBrowser.Applications.Contracts;
 using SafeExamBrowser.Configuration.Contracts;
@@ -31,6 +27,10 @@ using SafeExamBrowser.UserInterface.Contracts.Shell;
 using SafeExamBrowser.UserInterface.Contracts.Windows;
 using SafeExamBrowser.UserInterface.Contracts.Windows.Data;
 using SafeExamBrowser.UserInterface.Mobile.Windows;
+using System.Collections.Generic;
+using System.Threading;
+using System.Windows;
+using System.Windows.Media;
 using SplashScreen = SafeExamBrowser.UserInterface.Mobile.Windows.SplashScreen;
 
 namespace SafeExamBrowser.UserInterface.Mobile

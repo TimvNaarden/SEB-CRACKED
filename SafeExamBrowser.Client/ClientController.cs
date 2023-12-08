@@ -6,12 +6,6 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text.RegularExpressions;
-using System.Threading;
 using SafeExamBrowser.Applications.Contracts;
 using SafeExamBrowser.Browser.Contracts;
 using SafeExamBrowser.Browser.Contracts.Events;
@@ -39,6 +33,12 @@ using SafeExamBrowser.UserInterface.Contracts.Shell;
 using SafeExamBrowser.UserInterface.Contracts.Windows;
 using SafeExamBrowser.UserInterface.Contracts.Windows.Data;
 using SafeExamBrowser.WindowsApi.Contracts;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text.RegularExpressions;
+using System.Threading;
 
 namespace SafeExamBrowser.Client
 {

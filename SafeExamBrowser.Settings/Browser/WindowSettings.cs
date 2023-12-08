@@ -20,7 +20,7 @@ namespace SafeExamBrowser.Settings.Browser
 		/// Optionally defines the height of the browser window in physical pixels.
 		/// </summary>
 		public int? AbsoluteHeight { get; set; }
-		
+
 		/// <summary>
 		/// Optionally defines the width of the browser window in physical pixels.
 		/// </summary>
@@ -35,7 +35,7 @@ namespace SafeExamBrowser.Settings.Browser
 		/// Determines whether the user will be allowed to navigate backwards.
 		/// </summary>
 		public bool AllowBackwardNavigation { get; set; }
-		
+
 		/// <summary>
 		/// Determines whether the user will be allowed to open the developer console.
 		/// </summary>

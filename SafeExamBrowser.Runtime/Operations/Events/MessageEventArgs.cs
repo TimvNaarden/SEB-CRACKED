@@ -6,10 +6,10 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System.Collections.Generic;
 using SafeExamBrowser.Core.Contracts.OperationModel.Events;
 using SafeExamBrowser.I18n.Contracts;
 using SafeExamBrowser.UserInterface.Contracts.MessageBox;
+using System.Collections.Generic;
 
 namespace SafeExamBrowser.Runtime.Operations.Events
 {

@@ -6,10 +6,6 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System;
-using System.IO;
-using System.Net;
-using System.Text.RegularExpressions;
 using CefSharp;
 using SafeExamBrowser.Browser.Contracts.Filters;
 using SafeExamBrowser.Browser.Events;
@@ -17,6 +13,10 @@ using SafeExamBrowser.Configuration.Contracts;
 using SafeExamBrowser.Logging.Contracts;
 using SafeExamBrowser.Settings.Browser;
 using SafeExamBrowser.Settings.Browser.Filter;
+using System;
+using System.IO;
+using System.Net;
+using System.Text.RegularExpressions;
 using BrowserSettings = SafeExamBrowser.Settings.Browser.BrowserSettings;
 using Request = SafeExamBrowser.Browser.Contracts.Filters.Request;
 

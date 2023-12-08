@@ -6,14 +6,14 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+using SafeExamBrowser.I18n.Contracts;
+using SafeExamBrowser.Logging.Contracts;
+using SafeExamBrowser.Settings.Logging;
 using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Documents;
 using System.Windows.Media;
-using SafeExamBrowser.I18n.Contracts;
-using SafeExamBrowser.Logging.Contracts;
-using SafeExamBrowser.Settings.Logging;
 
 namespace SafeExamBrowser.UserInterface.Desktop.ViewModels
 {

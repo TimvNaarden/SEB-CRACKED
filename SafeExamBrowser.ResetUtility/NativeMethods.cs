@@ -31,7 +31,7 @@ namespace SafeExamBrowser.ResetUtility
 				// SetWindowLong(GetConsoleWindow(), GWL_STYLE, GetWindowLong(GetConsoleWindow(), GWL_STYLE) & ~WS_MINIMIZEBOX);
 				SetWindowLong(GetConsoleWindow(), GWL_STYLE, GetWindowLong(GetConsoleWindow(), GWL_STYLE) & ~WS_MAXIMIZEBOX);
 			}
-			catch(Exception) { }
+			catch (Exception) { }
 		}
 
 		[DllImport("user32.dll")]

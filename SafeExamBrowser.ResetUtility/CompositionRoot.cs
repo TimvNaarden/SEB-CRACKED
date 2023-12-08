@@ -6,9 +6,6 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System;
-using System.Collections.Generic;
-using System.IO;
 using SafeExamBrowser.Lockdown;
 using SafeExamBrowser.Lockdown.Contracts;
 using SafeExamBrowser.Logging;
@@ -16,6 +13,9 @@ using SafeExamBrowser.Logging.Contracts;
 using SafeExamBrowser.ResetUtility.Procedure;
 using SafeExamBrowser.Settings.Logging;
 using SafeExamBrowser.SystemComponents;
+using System;
+using System.Collections.Generic;
+using System.IO;
 
 namespace SafeExamBrowser.ResetUtility
 {

@@ -6,10 +6,10 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System;
-using System.Collections.Generic;
 using SafeExamBrowser.Logging.Contracts;
 using SafeExamBrowser.Settings.Logging;
+using System;
+using System.Collections.Generic;
 
 namespace SafeExamBrowser.ResetUtility.Procedure
 {
@@ -107,7 +107,7 @@ namespace SafeExamBrowser.ResetUtility.Procedure
 			Console.ForegroundColor = ConsoleColor.DarkGray;
 			Console.Write($"{date} {threadInfo} - ");
 			Console.ForegroundColor = GetColorFor(message.Severity);
-			Console.WriteLine($"{severity}: { message.Message}");
+			Console.WriteLine($"{severity}: {message.Message}");
 			Console.ForegroundColor = ForegroundColor;
 		}
 

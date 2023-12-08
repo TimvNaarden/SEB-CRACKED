@@ -6,10 +6,10 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System.Windows.Forms;
 using CefSharp;
 using SafeExamBrowser.Browser.Contracts.Events;
 using SafeExamBrowser.UserInterface.Contracts;
+using System.Windows.Forms;
 
 namespace SafeExamBrowser.Browser.Handlers
 {
@@ -63,7 +63,7 @@ namespace SafeExamBrowser.Browser.Handlers
 					ZoomResetRequested?.Invoke();
 				}
 
-				if (keyCode == (int)Keys.Tab && keyCode == currentKeyDown)
+				if (keyCode == (int) Keys.Tab && keyCode == currentKeyDown)
 				{
 					TabPressed?.Invoke(shift);
 				}

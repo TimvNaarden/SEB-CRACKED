@@ -6,8 +6,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System.IO;
 using SafeExamBrowser.SystemComponents.Contracts;
+using System.IO;
 
 namespace SafeExamBrowser.SystemComponents
 {

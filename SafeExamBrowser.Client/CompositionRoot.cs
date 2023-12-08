@@ -6,9 +6,6 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 using SafeExamBrowser.Applications;
 using SafeExamBrowser.Browser;
 using SafeExamBrowser.Client.Communication;
@@ -52,6 +49,9 @@ using SafeExamBrowser.UserInterface.Contracts.Shell;
 using SafeExamBrowser.UserInterface.Shared.Activators;
 using SafeExamBrowser.WindowsApi;
 using SafeExamBrowser.WindowsApi.Contracts;
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
 using Desktop = SafeExamBrowser.UserInterface.Desktop;
 using Mobile = SafeExamBrowser.UserInterface.Mobile;
 
@@ -308,8 +308,8 @@ namespace SafeExamBrowser.Client
 
 			context.Activators.Add(new ActionCenterKeyboardActivator(ModuleLogger(nameof(ActionCenterKeyboardActivator)), nativeMethods));
 			context.Activators.Add(new ActionCenterTouchActivator(ModuleLogger(nameof(ActionCenterTouchActivator)), nativeMethods));
-			context.Activators.Add(new TaskbarKeyboardActivator(ModuleLogger(nameof(TaskbarKeyboardActivator)), nativeMethods));
-			context.Activators.Add(new TaskviewKeyboardActivator(ModuleLogger(nameof(TaskviewKeyboardActivator)), nativeMethods));
+			//context.Activators.Add(new TaskbarKeyboardActivator(ModuleLogger(nameof(TaskbarKeyboardActivator)), nativeMethods));
+			//context.Activators.Add(new TaskviewKeyboardActivator(ModuleLogger(nameof(TaskviewKeyboardActivator)), nativeMethods));
 			context.Activators.Add(new TerminationActivator(ModuleLogger(nameof(TerminationActivator)), nativeMethods));
 
 			return operation;

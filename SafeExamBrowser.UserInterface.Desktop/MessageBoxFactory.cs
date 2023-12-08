@@ -6,10 +6,10 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System.Windows;
 using SafeExamBrowser.I18n.Contracts;
 using SafeExamBrowser.UserInterface.Contracts.MessageBox;
 using SafeExamBrowser.UserInterface.Contracts.Windows;
+using System.Windows;
 using MessageBoxResult = SafeExamBrowser.UserInterface.Contracts.MessageBox.MessageBoxResult;
 
 namespace SafeExamBrowser.UserInterface.Desktop

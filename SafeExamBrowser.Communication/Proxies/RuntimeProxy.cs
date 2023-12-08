@@ -6,11 +6,11 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System;
 using SafeExamBrowser.Communication.Contracts;
 using SafeExamBrowser.Communication.Contracts.Data;
 using SafeExamBrowser.Communication.Contracts.Proxies;
 using SafeExamBrowser.Logging.Contracts;
+using System;
 
 namespace SafeExamBrowser.Communication.Proxies
 {

@@ -6,11 +6,6 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.NetworkInformation;
-using System.Timers;
 using SafeExamBrowser.Logging.Contracts;
 using SafeExamBrowser.SystemComponents.Contracts.Network;
 using SafeExamBrowser.SystemComponents.Contracts.Network.Events;
@@ -18,6 +13,11 @@ using SafeExamBrowser.WindowsApi.Contracts;
 using SimpleWifi;
 using SimpleWifi.Win32;
 using SimpleWifi.Win32.Interop;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net.NetworkInformation;
+using System.Timers;
 
 namespace SafeExamBrowser.SystemComponents.Network
 {

@@ -6,12 +6,12 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+using SafeExamBrowser.Lockdown.Contracts;
+using SafeExamBrowser.Logging.Contracts;
 using System;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using SafeExamBrowser.Lockdown.Contracts;
-using SafeExamBrowser.Logging.Contracts;
 
 namespace SafeExamBrowser.Lockdown
 {
@@ -41,7 +41,7 @@ namespace SafeExamBrowser.Lockdown
 				process.WaitForExit();
 
 				var output = process.StandardOutput.ReadToEnd();
-				var lines = output.Split(new [] { Environment.NewLine, "\r", "\n" }, StringSplitOptions.RemoveEmptyEntries);
+				var lines = output.Split(new[] { Environment.NewLine, "\r", "\n" }, StringSplitOptions.RemoveEmptyEntries);
 
 				logger.Info($"Update has completed: {String.Join(" ", lines.Skip(1))}");
 			}

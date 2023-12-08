@@ -6,6 +6,9 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+using SafeExamBrowser.Configuration.Contracts;
+using SafeExamBrowser.Configuration.Contracts.DataResources;
+using SafeExamBrowser.Logging.Contracts;
 using System;
 using System.IO;
 using System.Linq;
@@ -13,9 +16,6 @@ using System.Net;
 using System.Net.Http;
 using System.Net.Mime;
 using System.Threading.Tasks;
-using SafeExamBrowser.Configuration.Contracts;
-using SafeExamBrowser.Configuration.Contracts.DataResources;
-using SafeExamBrowser.Logging.Contracts;
 
 namespace SafeExamBrowser.Configuration.DataResources
 {
@@ -160,7 +160,7 @@ namespace SafeExamBrowser.Configuration.DataResources
 
 				var request = new HttpRequestMessage(HttpMethod.Head, uri);
 				var response = Execute(request);
-				
+
 				isAvailable = response.IsSuccessStatusCode || IsUnauthorized(response);
 				logger.Debug($"Received response '{ToString(response)}'.");
 			}

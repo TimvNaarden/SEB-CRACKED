@@ -6,7 +6,6 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System;
 using SafeExamBrowser.Settings.Applications;
 using SafeExamBrowser.Settings.Browser;
 using SafeExamBrowser.Settings.Logging;
@@ -17,6 +16,7 @@ using SafeExamBrowser.Settings.Server;
 using SafeExamBrowser.Settings.Service;
 using SafeExamBrowser.Settings.SystemComponents;
 using SafeExamBrowser.Settings.UserInterface;
+using System;
 
 namespace SafeExamBrowser.Settings
 {

@@ -6,13 +6,13 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System.Collections.Generic;
-using System.Windows;
-using System.Windows.Controls;
 using SafeExamBrowser.I18n.Contracts;
 using SafeExamBrowser.Server.Contracts.Data;
 using SafeExamBrowser.UserInterface.Contracts.Windows;
 using SafeExamBrowser.UserInterface.Contracts.Windows.Data;
+using System.Collections.Generic;
+using System.Windows;
+using System.Windows.Controls;
 
 namespace SafeExamBrowser.UserInterface.Desktop.Windows
 {

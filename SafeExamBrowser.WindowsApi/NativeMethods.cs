@@ -6,6 +6,11 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+using SafeExamBrowser.WindowsApi.Constants;
+using SafeExamBrowser.WindowsApi.Contracts;
+using SafeExamBrowser.WindowsApi.Contracts.Events;
+using SafeExamBrowser.WindowsApi.Hooks;
+using SafeExamBrowser.WindowsApi.Types;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -14,11 +19,6 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
-using SafeExamBrowser.WindowsApi.Constants;
-using SafeExamBrowser.WindowsApi.Contracts;
-using SafeExamBrowser.WindowsApi.Contracts.Events;
-using SafeExamBrowser.WindowsApi.Hooks;
-using SafeExamBrowser.WindowsApi.Types;
 
 namespace SafeExamBrowser.WindowsApi
 {
@@ -121,7 +121,7 @@ namespace SafeExamBrowser.WindowsApi
 			var success = true;
 
 			success &= User32.OpenClipboard(IntPtr.Zero);
-			success &= User32.EmptyClipboard();
+			//success &= User32.EmptyClipboard();
 			success &= User32.CloseClipboard();
 
 			if (!success)
@@ -142,7 +142,7 @@ namespace SafeExamBrowser.WindowsApi
 		public IEnumerable<IntPtr> GetOpenWindows()
 		{
 			var windows = new List<IntPtr>();
-
+			/*
 			bool EnumWindows(IntPtr hWnd, IntPtr lParam)
 			{
 				if (hWnd != GetShellWindowHandle() && User32.IsWindowVisible(hWnd) && User32.GetWindowTextLength(hWnd) > 0)
@@ -159,7 +159,7 @@ namespace SafeExamBrowser.WindowsApi
 			{
 				throw new Win32Exception(Marshal.GetLastWin32Error());
 			}
-
+			*/
 			return windows;
 		}
 
@@ -252,14 +252,15 @@ namespace SafeExamBrowser.WindowsApi
 
 		public bool HideWindow(IntPtr window)
 		{
-			return User32.ShowWindow(window, (int) ShowWindowCommand.Hide);
+			return true;
+			//return User32.ShowWindow(window, (int) ShowWindowCommand.Hide);
 		}
 
 		public void MinimizeAllOpenWindows()
 		{
-			var handle = GetShellWindowHandle();
+			//var handle = GetShellWindowHandle();
 
-			User32.SendMessage(handle, Constant.WM_COMMAND, (IntPtr) Constant.MIN_ALL, IntPtr.Zero);
+			//User32.SendMessage(handle, Constant.WM_COMMAND, (IntPtr) Constant.MIN_ALL, IntPtr.Zero);
 		}
 
 		public void PostCloseMessageToShell()
@@ -413,12 +414,14 @@ namespace SafeExamBrowser.WindowsApi
 
 		public void SetWallpaper(string filePath)
 		{
+			/* 
 			var success = User32.SystemParametersInfo(SPI.SETDESKWALLPAPER, 0, filePath, SPIF.NONE);
 
 			if (!success)
 			{
 				throw new Win32Exception(Marshal.GetLastWin32Error());
 			}
+			*/
 		}
 
 		public void SetWorkingArea(IBounds bounds)

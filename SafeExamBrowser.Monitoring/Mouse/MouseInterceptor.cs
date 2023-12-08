@@ -6,12 +6,12 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System;
 using SafeExamBrowser.Logging.Contracts;
 using SafeExamBrowser.Monitoring.Contracts.Mouse;
 using SafeExamBrowser.Settings.Monitoring;
 using SafeExamBrowser.WindowsApi.Contracts;
 using SafeExamBrowser.WindowsApi.Contracts.Events;
+using System;
 
 namespace SafeExamBrowser.Monitoring.Mouse
 {

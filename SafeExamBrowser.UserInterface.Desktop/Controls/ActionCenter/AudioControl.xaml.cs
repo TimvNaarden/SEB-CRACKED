@@ -6,6 +6,11 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+using SafeExamBrowser.Core.Contracts.Resources.Icons;
+using SafeExamBrowser.I18n.Contracts;
+using SafeExamBrowser.SystemComponents.Contracts.Audio;
+using SafeExamBrowser.UserInterface.Contracts.Shell;
+using SafeExamBrowser.UserInterface.Shared.Utilities;
 using System;
 using System.Threading.Tasks;
 using System.Windows;
@@ -13,11 +18,6 @@ using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Media;
 using System.Windows.Threading;
-using SafeExamBrowser.Core.Contracts.Resources.Icons;
-using SafeExamBrowser.I18n.Contracts;
-using SafeExamBrowser.SystemComponents.Contracts.Audio;
-using SafeExamBrowser.UserInterface.Contracts.Shell;
-using SafeExamBrowser.UserInterface.Shared.Utilities;
 
 namespace SafeExamBrowser.UserInterface.Desktop.Controls.ActionCenter
 {
@@ -147,7 +147,7 @@ namespace SafeExamBrowser.UserInterface.Desktop.Controls.ActionCenter
 		{
 			var icon = volume > 0.66 ? "100" : (volume > 0.33 ? "66" : "33");
 			var uri = new Uri($"pack://application:,,,/SafeExamBrowser.UserInterface.Desktop;component/Images/Audio_Light_{icon}.xaml");
-			var resource = new XamlIconResource { Uri = uri};
+			var resource = new XamlIconResource { Uri = uri };
 
 			return IconResourceLoader.Load(resource);
 		}

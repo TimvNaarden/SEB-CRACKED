@@ -6,12 +6,12 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System.Threading.Tasks;
-using System.Windows.Controls;
-using System.Windows.Media;
 using SafeExamBrowser.I18n.Contracts;
 using SafeExamBrowser.SystemComponents.Contracts.Keyboard;
 using SafeExamBrowser.UserInterface.Contracts.Shell;
+using System.Threading.Tasks;
+using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace SafeExamBrowser.UserInterface.Desktop.Controls.ActionCenter
 {
@@ -44,7 +44,7 @@ namespace SafeExamBrowser.UserInterface.Desktop.Controls.ActionCenter
 			Button.Click += (o, args) =>
 			{
 				Popup.IsOpen = !Popup.IsOpen;
-				this.Dispatcher.BeginInvoke((System.Action)(() =>
+				this.Dispatcher.BeginInvoke((System.Action) (() =>
 				{
 					LayoutsStackPanel.Children[0].Focus();
 				}));

@@ -6,6 +6,12 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+using FontAwesome.WPF;
+using Microsoft.Win32;
+using SafeExamBrowser.I18n.Contracts;
+using SafeExamBrowser.UserInterface.Contracts.FileSystemDialog;
+using SafeExamBrowser.UserInterface.Contracts.Windows;
+using SafeExamBrowser.UserInterface.Shared.Utilities;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -14,12 +20,6 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
-using FontAwesome.WPF;
-using Microsoft.Win32;
-using SafeExamBrowser.I18n.Contracts;
-using SafeExamBrowser.UserInterface.Contracts.FileSystemDialog;
-using SafeExamBrowser.UserInterface.Contracts.Windows;
-using SafeExamBrowser.UserInterface.Shared.Utilities;
 
 namespace SafeExamBrowser.UserInterface.Mobile.Windows
 {

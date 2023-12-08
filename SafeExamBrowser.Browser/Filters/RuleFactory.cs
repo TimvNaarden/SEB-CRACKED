@@ -6,10 +6,10 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System;
 using SafeExamBrowser.Browser.Contracts.Filters;
 using SafeExamBrowser.Browser.Filters.Rules;
 using SafeExamBrowser.Settings.Browser.Filter;
+using System;
 
 namespace SafeExamBrowser.Browser.Filters
 {

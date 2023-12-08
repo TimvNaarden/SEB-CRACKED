@@ -6,16 +6,16 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+using SafeExamBrowser.Applications.Contracts;
+using SafeExamBrowser.Applications.Contracts.Events;
+using SafeExamBrowser.Applications.Events;
+using SafeExamBrowser.Core.Contracts.Resources.Icons;
+using SafeExamBrowser.Logging.Contracts;
+using SafeExamBrowser.WindowsApi.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Timers;
-using SafeExamBrowser.Applications.Contracts;
-using SafeExamBrowser.Applications.Contracts.Events;
-using SafeExamBrowser.Core.Contracts.Resources.Icons;
-using SafeExamBrowser.Applications.Events;
-using SafeExamBrowser.Logging.Contracts;
-using SafeExamBrowser.WindowsApi.Contracts;
 
 namespace SafeExamBrowser.Applications
 {

@@ -6,8 +6,6 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System;
-using System.IO;
 using SafeExamBrowser.Communication.Contracts.Data;
 using SafeExamBrowser.Configuration.Contracts;
 using SafeExamBrowser.Configuration.Contracts.Cryptography;
@@ -19,6 +17,8 @@ using SafeExamBrowser.Runtime.Operations.Events;
 using SafeExamBrowser.Settings;
 using SafeExamBrowser.Settings.Security;
 using SafeExamBrowser.SystemComponents.Contracts;
+using System;
+using System.IO;
 
 namespace SafeExamBrowser.Runtime.Operations
 {

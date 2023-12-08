@@ -6,13 +6,6 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System;
-using System.Collections.Specialized;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Net.Mime;
-using System.Threading.Tasks;
 using CefSharp;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -25,6 +18,13 @@ using SafeExamBrowser.I18n.Contracts;
 using SafeExamBrowser.Logging.Contracts;
 using SafeExamBrowser.Settings.Browser;
 using SafeExamBrowser.Settings.Browser.Filter;
+using System;
+using System.Collections.Specialized;
+using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Net.Mime;
+using System.Threading.Tasks;
 using BrowserSettings = SafeExamBrowser.Settings.Browser.BrowserSettings;
 using Request = SafeExamBrowser.Browser.Contracts.Filters.Request;
 

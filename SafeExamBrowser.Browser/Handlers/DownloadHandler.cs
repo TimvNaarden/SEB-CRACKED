@@ -6,10 +6,6 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System;
-using System.Collections.Concurrent;
-using System.IO;
-using System.Threading.Tasks;
 using CefSharp;
 using SafeExamBrowser.Browser.Contracts.Events;
 using SafeExamBrowser.Browser.Events;
@@ -18,6 +14,10 @@ using SafeExamBrowser.Logging.Contracts;
 using SafeExamBrowser.Settings.Browser;
 using SafeExamBrowser.UserInterface.Contracts.Browser.Data;
 using Syroot.Windows.IO;
+using System;
+using System.Collections.Concurrent;
+using System.IO;
+using System.Threading.Tasks;
 using BrowserSettings = SafeExamBrowser.Settings.Browser.BrowserSettings;
 
 namespace SafeExamBrowser.Browser.Handlers

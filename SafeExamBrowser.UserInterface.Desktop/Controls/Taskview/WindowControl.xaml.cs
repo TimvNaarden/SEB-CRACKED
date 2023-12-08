@@ -6,13 +6,13 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+using SafeExamBrowser.Applications.Contracts;
+using SafeExamBrowser.Core.Contracts.Resources.Icons;
+using SafeExamBrowser.UserInterface.Shared.Utilities;
 using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Threading;
-using SafeExamBrowser.Applications.Contracts;
-using SafeExamBrowser.Core.Contracts.Resources.Icons;
-using SafeExamBrowser.UserInterface.Shared.Utilities;
 
 namespace SafeExamBrowser.UserInterface.Desktop.Controls.Taskview
 {

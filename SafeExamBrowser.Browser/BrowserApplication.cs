@@ -6,12 +6,6 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.IO;
-using System.Linq;
-using System.Threading;
 using CefSharp;
 using CefSharp.WinForms;
 using SafeExamBrowser.Applications.Contracts;
@@ -30,6 +24,12 @@ using SafeExamBrowser.UserInterface.Contracts;
 using SafeExamBrowser.UserInterface.Contracts.FileSystemDialog;
 using SafeExamBrowser.UserInterface.Contracts.MessageBox;
 using SafeExamBrowser.WindowsApi.Contracts;
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
+using System.Linq;
+using System.Threading;
 using BrowserSettings = SafeExamBrowser.Settings.Browser.BrowserSettings;
 
 namespace SafeExamBrowser.Browser

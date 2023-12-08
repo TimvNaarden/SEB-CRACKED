@@ -6,10 +6,6 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System;
-using System.IO;
-using System.Linq;
-using System.Threading;
 using SafeExamBrowser.Communication.Contracts.Data;
 using SafeExamBrowser.Communication.Contracts.Events;
 using SafeExamBrowser.Communication.Contracts.Hosts;
@@ -26,6 +22,10 @@ using SafeExamBrowser.Settings.Service;
 using SafeExamBrowser.UserInterface.Contracts;
 using SafeExamBrowser.UserInterface.Contracts.MessageBox;
 using SafeExamBrowser.UserInterface.Contracts.Windows;
+using System;
+using System.IO;
+using System.Linq;
+using System.Threading;
 
 namespace SafeExamBrowser.Runtime
 {
@@ -203,8 +203,9 @@ namespace SafeExamBrowser.Runtime
 
 			if (Session.Settings.Security.KioskMode == KioskMode.DisableExplorerShell)
 			{
-				runtimeWindow.Hide();
+
 			}
+			runtimeWindow.Hide();
 		}
 
 		private void HandleSessionStartFailure()

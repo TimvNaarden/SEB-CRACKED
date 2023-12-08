@@ -6,12 +6,12 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System;
-using System.IO;
-using System.Windows.Controls;
 using SafeExamBrowser.I18n.Contracts;
 using SafeExamBrowser.UserInterface.Contracts.Browser.Data;
 using SafeExamBrowser.UserInterface.Shared.Utilities;
+using System;
+using System.IO;
+using System.Windows.Controls;
 
 namespace SafeExamBrowser.UserInterface.Mobile.Controls.Browser
 {

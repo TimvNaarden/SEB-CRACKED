@@ -6,14 +6,14 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System;
-using System.Collections.Generic;
-using System.ServiceModel;
-using System.Threading;
 using SafeExamBrowser.Communication.Contracts;
 using SafeExamBrowser.Communication.Contracts.Data;
 using SafeExamBrowser.Communication.Contracts.Hosts;
 using SafeExamBrowser.Logging.Contracts;
+using System;
+using System.Collections.Generic;
+using System.ServiceModel;
+using System.Threading;
 
 namespace SafeExamBrowser.Communication.Hosts
 {

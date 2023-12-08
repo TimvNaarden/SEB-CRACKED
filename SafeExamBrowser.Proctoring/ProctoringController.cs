@@ -6,11 +6,6 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System;
-using System.IO;
-using System.Reflection;
-using System.Threading;
-using System.Windows;
 using Microsoft.Web.WebView2.Wpf;
 using SafeExamBrowser.Configuration.Contracts;
 using SafeExamBrowser.Core.Contracts.Notifications;
@@ -26,6 +21,11 @@ using SafeExamBrowser.Settings.Proctoring;
 using SafeExamBrowser.SystemComponents.Contracts;
 using SafeExamBrowser.UserInterface.Contracts;
 using SafeExamBrowser.UserInterface.Contracts.Proctoring;
+using System;
+using System.IO;
+using System.Reflection;
+using System.Threading;
+using System.Windows;
 
 namespace SafeExamBrowser.Proctoring
 {

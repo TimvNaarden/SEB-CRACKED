@@ -6,16 +6,16 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+using SafeExamBrowser.Logging.Contracts;
 using System;
 using System.Collections.Generic;
-using SafeExamBrowser.Logging.Contracts;
 
 namespace SafeExamBrowser.Lockdown.FeatureConfigurations.RegistryConfigurations.MachineHive
 {
 	[Serializable]
 	internal class EaseOfAccessConfiguration : MachineHiveConfiguration
 	{
-		protected override IEnumerable<RegistryConfigurationItem> Items => new []
+		protected override IEnumerable<RegistryConfigurationItem> Items => new[]
 		{
 			new RegistryConfigurationItem(@"HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Utilman.exe", "Debugger", "SebDummy.exe", "")
 		};

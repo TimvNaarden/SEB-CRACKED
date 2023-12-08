@@ -6,8 +6,6 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System;
-using System.Collections.Generic;
 using SafeExamBrowser.Communication.Contracts;
 using SafeExamBrowser.Communication.Hosts;
 using SafeExamBrowser.Communication.Proxies;
@@ -25,7 +23,6 @@ using SafeExamBrowser.I18n;
 using SafeExamBrowser.I18n.Contracts;
 using SafeExamBrowser.Logging;
 using SafeExamBrowser.Logging.Contracts;
-using SafeExamBrowser.Monitoring.Display;
 using SafeExamBrowser.Runtime.Communication;
 using SafeExamBrowser.Runtime.Operations;
 using SafeExamBrowser.Server;
@@ -34,6 +31,8 @@ using SafeExamBrowser.SystemComponents;
 using SafeExamBrowser.SystemComponents.Contracts;
 using SafeExamBrowser.UserInterface.Desktop;
 using SafeExamBrowser.WindowsApi;
+using System;
+using System.Collections.Generic;
 
 namespace SafeExamBrowser.Runtime
 {
@@ -65,10 +64,10 @@ namespace SafeExamBrowser.Runtime
 
 			var args = Environment.GetCommandLineArgs();
 			var integrityModule = new IntegrityModule(ModuleLogger(nameof(IntegrityModule)));
-			var desktopFactory = new DesktopFactory(ModuleLogger(nameof(DesktopFactory)));
-			var desktopMonitor = new DesktopMonitor(ModuleLogger(nameof(DesktopMonitor)));
-			var displayMonitor = new DisplayMonitor(ModuleLogger(nameof(DisplayMonitor)), nativeMethods, systemInfo);
-			var explorerShell = new ExplorerShell(ModuleLogger(nameof(ExplorerShell)), nativeMethods);
+			//var desktopFactory = new DesktopFactory(ModuleLogger(nameof(DesktopFactory)));
+			//var desktopMonitor = new DesktopMonitor(ModuleLogger(nameof(DesktopMonitor)));
+			//var displayMonitor = new DisplayMonitor(ModuleLogger(nameof(DisplayMonitor)), nativeMethods, systemInfo);
+			//var explorerShell = new ExplorerShell(ModuleLogger(nameof(ExplorerShell)), nativeMethods);
 			var fileSystem = new FileSystem();
 			var messageBox = new MessageBoxFactory(text);
 			var processFactory = new ProcessFactory(ModuleLogger(nameof(ProcessFactory)));
@@ -80,7 +79,7 @@ namespace SafeExamBrowser.Runtime
 			var serviceProxy = new ServiceProxy(appConfig.ServiceAddress, new ProxyObjectFactory(), ModuleLogger(nameof(ServiceProxy)), Interlocutor.Runtime);
 			var sessionContext = new SessionContext();
 			var splashScreen = uiFactory.CreateSplashScreen(appConfig);
-			var vmDetector = new VirtualMachineDetector(ModuleLogger(nameof(VirtualMachineDetector)), systemInfo);
+			//var vmDetector = new VirtualMachineDetector(ModuleLogger(nameof(VirtualMachineDetector)), systemInfo);
 
 			var bootstrapOperations = new Queue<IOperation>();
 			var sessionOperations = new Queue<IRepeatableOperation>();
@@ -94,12 +93,12 @@ namespace SafeExamBrowser.Runtime
 			sessionOperations.Enqueue(new ServerOperation(args, configuration, fileSystem, logger, sessionContext, server));
 			sessionOperations.Enqueue(new DisclaimerOperation(logger, sessionContext));
 			sessionOperations.Enqueue(new RemoteSessionOperation(remoteSessionDetector, logger, sessionContext));
-			sessionOperations.Enqueue(new VirtualMachineOperation(vmDetector, logger, sessionContext));
-			sessionOperations.Enqueue(new DisplayMonitorOperation(displayMonitor, logger, sessionContext, text));
+			//sessionOperations.Enqueue(new VirtualMachineOperation(vmDetector, logger, sessionContext));
+			//sessionOperations.Enqueue(new DisplayMonitorOperation(displayMonitor, logger, sessionContext, text));
 			sessionOperations.Enqueue(new ServiceOperation(logger, runtimeHost, serviceProxy, sessionContext, THIRTY_SECONDS, userInfo));
 			sessionOperations.Enqueue(new ClientTerminationOperation(logger, processFactory, proxyFactory, runtimeHost, sessionContext, THIRTY_SECONDS));
-			sessionOperations.Enqueue(new ProctoringWorkaroundOperation(logger, sessionContext));
-			sessionOperations.Enqueue(new KioskModeOperation(desktopFactory, desktopMonitor, explorerShell, logger, processFactory, sessionContext));
+			//sessionOperations.Enqueue(new ProctoringWorkaroundOperation(logger, sessionContext));
+			//sessionOperations.Enqueue(new KioskModeOperation(desktopFactory, desktopMonitor, explorerShell, logger, processFactory, sessionContext));
 			sessionOperations.Enqueue(new ClientOperation(logger, processFactory, proxyFactory, runtimeHost, sessionContext, THIRTY_SECONDS));
 			sessionOperations.Enqueue(new SessionActivationOperation(logger, sessionContext));
 

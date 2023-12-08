@@ -6,15 +6,15 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+using SafeExamBrowser.Applications.Contracts;
+using SafeExamBrowser.UserInterface.Contracts.Shell;
+using SafeExamBrowser.UserInterface.Mobile.Controls.Taskview;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Interop;
-using SafeExamBrowser.Applications.Contracts;
-using SafeExamBrowser.UserInterface.Contracts.Shell;
-using SafeExamBrowser.UserInterface.Mobile.Controls.Taskview;
 
 namespace SafeExamBrowser.UserInterface.Mobile.Windows
 {

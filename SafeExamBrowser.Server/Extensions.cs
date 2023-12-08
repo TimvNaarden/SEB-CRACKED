@@ -6,9 +6,9 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+using SafeExamBrowser.Settings.Logging;
 using System;
 using System.Net.Http;
-using SafeExamBrowser.Settings.Logging;
 
 namespace SafeExamBrowser.Server
 {

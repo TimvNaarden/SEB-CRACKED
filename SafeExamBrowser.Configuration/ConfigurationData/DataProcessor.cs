@@ -6,13 +6,13 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+using SafeExamBrowser.Settings;
+using SafeExamBrowser.Settings.Applications;
+using SafeExamBrowser.Settings.Proctoring;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Security.Cryptography;
-using SafeExamBrowser.Settings;
-using SafeExamBrowser.Settings.Applications;
-using SafeExamBrowser.Settings.Proctoring;
 
 namespace SafeExamBrowser.Configuration.ConfigurationData
 {

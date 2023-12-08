@@ -6,10 +6,10 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+using SafeExamBrowser.SystemComponents.Contracts.Keyboard;
 using System;
 using System.Windows;
 using System.Windows.Controls;
-using SafeExamBrowser.SystemComponents.Contracts.Keyboard;
 
 namespace SafeExamBrowser.UserInterface.Mobile.Controls.Taskbar
 {

@@ -6,11 +6,11 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System.Windows;
-using System.Windows.Controls;
 using SafeExamBrowser.Core.Contracts.Notifications;
 using SafeExamBrowser.UserInterface.Contracts.Shell;
 using SafeExamBrowser.UserInterface.Shared.Utilities;
+using System.Windows;
+using System.Windows.Controls;
 
 namespace SafeExamBrowser.UserInterface.Desktop.Controls.ActionCenter
 {

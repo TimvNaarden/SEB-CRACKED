@@ -6,15 +6,15 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System;
-using System.Collections.Generic;
-using System.IO;
 using Microsoft.Win32;
 using SafeExamBrowser.Applications.Contracts;
 using SafeExamBrowser.Logging.Contracts;
 using SafeExamBrowser.Monitoring.Contracts.Applications;
 using SafeExamBrowser.Settings.Applications;
 using SafeExamBrowser.WindowsApi.Contracts;
+using System;
+using System.Collections.Generic;
+using System.IO;
 
 namespace SafeExamBrowser.Applications
 {
@@ -39,7 +39,7 @@ namespace SafeExamBrowser.Applications
 
 		public FactoryResult TryCreate(WhitelistApplication settings, out IApplication application)
 		{
-			var name = $"'{settings.DisplayName}' ({ settings.ExecutableName})";
+			var name = $"'{settings.DisplayName}' ({settings.ExecutableName})";
 
 			application = default(IApplication);
 

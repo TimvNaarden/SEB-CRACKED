@@ -6,10 +6,10 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System.Collections.Generic;
 using CefSharp;
 using CefSharp.WinForms.Host;
 using SafeExamBrowser.Browser.Wrapper.Events;
+using System.Collections.Generic;
 
 namespace SafeExamBrowser.Browser.Wrapper
 {

@@ -6,6 +6,10 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+using SafeExamBrowser.Logging.Contracts;
+using SafeExamBrowser.WindowsApi.Constants;
+using SafeExamBrowser.WindowsApi.Contracts;
+using SafeExamBrowser.WindowsApi.Types;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,10 +18,6 @@ using System.IO;
 using System.Linq;
 using System.Management;
 using System.Runtime.InteropServices;
-using SafeExamBrowser.Logging.Contracts;
-using SafeExamBrowser.WindowsApi.Constants;
-using SafeExamBrowser.WindowsApi.Contracts;
-using SafeExamBrowser.WindowsApi.Types;
 
 namespace SafeExamBrowser.WindowsApi
 {

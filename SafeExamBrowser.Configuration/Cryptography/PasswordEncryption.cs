@@ -6,12 +6,12 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System.IO;
-using System.Linq;
-using System.Security.Cryptography;
 using SafeExamBrowser.Configuration.Contracts;
 using SafeExamBrowser.Configuration.Contracts.Cryptography;
 using SafeExamBrowser.Logging.Contracts;
+using System.IO;
+using System.Linq;
+using System.Security.Cryptography;
 
 namespace SafeExamBrowser.Configuration.Cryptography
 {
@@ -58,7 +58,7 @@ namespace SafeExamBrowser.Configuration.Cryptography
 		public SaveStatus Encrypt(Stream data, string password, out Stream encrypted)
 		{
 			var (authKey, authSalt, encrKey, encrSalt) = GenerateKeysForEncryption(password);
-			
+
 			encrypted = Encrypt(data, encrKey, out var initVector);
 			encrypted = WriteEncryptionParameters(authKey, authSalt, encrSalt, initVector, encrypted);
 

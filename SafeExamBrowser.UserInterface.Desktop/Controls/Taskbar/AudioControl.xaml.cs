@@ -6,17 +6,17 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+using SafeExamBrowser.Core.Contracts.Resources.Icons;
+using SafeExamBrowser.I18n.Contracts;
+using SafeExamBrowser.SystemComponents.Contracts.Audio;
+using SafeExamBrowser.UserInterface.Contracts.Shell;
+using SafeExamBrowser.UserInterface.Shared.Utilities;
 using System;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Media;
-using SafeExamBrowser.Core.Contracts.Resources.Icons;
-using SafeExamBrowser.I18n.Contracts;
-using SafeExamBrowser.SystemComponents.Contracts.Audio;
-using SafeExamBrowser.UserInterface.Contracts.Shell;
-using SafeExamBrowser.UserInterface.Shared.Utilities;
 
 namespace SafeExamBrowser.UserInterface.Desktop.Controls.Taskbar
 {

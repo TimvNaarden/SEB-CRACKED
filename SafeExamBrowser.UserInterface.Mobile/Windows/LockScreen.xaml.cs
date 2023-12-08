@@ -6,6 +6,11 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+using SafeExamBrowser.I18n.Contracts;
+using SafeExamBrowser.UserInterface.Contracts.Windows;
+using SafeExamBrowser.UserInterface.Contracts.Windows.Data;
+using SafeExamBrowser.UserInterface.Contracts.Windows.Events;
+using SafeExamBrowser.UserInterface.Shared.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,11 +19,6 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
-using SafeExamBrowser.I18n.Contracts;
-using SafeExamBrowser.UserInterface.Contracts.Windows;
-using SafeExamBrowser.UserInterface.Contracts.Windows.Data;
-using SafeExamBrowser.UserInterface.Contracts.Windows.Events;
-using SafeExamBrowser.UserInterface.Shared.Utilities;
 using Screen = System.Windows.Forms.Screen;
 
 namespace SafeExamBrowser.UserInterface.Mobile.Windows

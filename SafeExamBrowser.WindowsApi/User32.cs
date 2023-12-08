@@ -6,12 +6,12 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System;
-using System.Runtime.InteropServices;
-using System.Text;
 using SafeExamBrowser.WindowsApi.Constants;
 using SafeExamBrowser.WindowsApi.Delegates;
 using SafeExamBrowser.WindowsApi.Types;
+using System;
+using System.Runtime.InteropServices;
+using System.Text;
 
 namespace SafeExamBrowser.WindowsApi
 {

@@ -6,8 +6,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System.ServiceModel;
 using SafeExamBrowser.Communication.Contracts.Proxies;
+using System.ServiceModel;
 
 namespace SafeExamBrowser.Communication.Proxies
 {

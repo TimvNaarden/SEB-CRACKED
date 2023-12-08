@@ -6,16 +6,16 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Timers;
 using SafeExamBrowser.Logging.Contracts;
 using SafeExamBrowser.Monitoring.Contracts.Applications;
 using SafeExamBrowser.Monitoring.Contracts.Applications.Events;
 using SafeExamBrowser.Settings.Applications;
 using SafeExamBrowser.WindowsApi.Contracts;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Timers;
 
 namespace SafeExamBrowser.Monitoring.Applications
 {
@@ -275,11 +275,11 @@ namespace SafeExamBrowser.Monitoring.Applications
 					{
 						if (!application.AutoTerminate)
 						{
-							AddForTermination(application.ExecutableName, process, result);
+							//AddForTermination(application.ExecutableName, process, result);
 						}
 						else if (application.AutoTerminate && !TryTerminate(process))
 						{
-							AddFailed(application.ExecutableName, process, result);
+							//AddFailed(application.ExecutableName, process, result);
 						}
 
 						break;
@@ -338,7 +338,7 @@ namespace SafeExamBrowser.Monitoring.Applications
 		private bool IsAllowed(Window window)
 		{
 			var processId = Convert.ToInt32(nativeMethods.GetProcessIdFor(window.Handle));
-			
+
 			if (processFactory.TryGetById(processId, out var process))
 			{
 				if (BelongsToSafeExamBrowser(process) || IsWhitelisted(process, out _))

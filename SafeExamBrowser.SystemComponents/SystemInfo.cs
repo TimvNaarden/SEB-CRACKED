@@ -6,12 +6,12 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+using SafeExamBrowser.SystemComponents.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Management;
 using System.Windows.Forms;
-using SafeExamBrowser.SystemComponents.Contracts;
 using BatteryChargeStatus = System.Windows.Forms.BatteryChargeStatus;
 using OperatingSystem = SafeExamBrowser.SystemComponents.Contracts.OperatingSystem;
 

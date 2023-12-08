@@ -6,8 +6,6 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System.Collections.Generic;
-using System.Linq;
 using SafeExamBrowser.Applications.Contracts;
 using SafeExamBrowser.Client.Operations.Events;
 using SafeExamBrowser.Core.Contracts.OperationModel;
@@ -17,6 +15,8 @@ using SafeExamBrowser.Logging.Contracts;
 using SafeExamBrowser.Monitoring.Contracts.Applications;
 using SafeExamBrowser.Settings.Applications;
 using SafeExamBrowser.Settings.Security;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace SafeExamBrowser.Client.Operations
 {

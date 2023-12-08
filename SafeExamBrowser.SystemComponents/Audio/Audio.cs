@@ -6,13 +6,13 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System;
-using System.Linq;
 using NAudio.CoreAudioApi;
-using SafeExamBrowser.Settings.SystemComponents;
 using SafeExamBrowser.Logging.Contracts;
+using SafeExamBrowser.Settings.SystemComponents;
 using SafeExamBrowser.SystemComponents.Contracts.Audio;
 using SafeExamBrowser.SystemComponents.Contracts.Audio.Events;
+using System;
+using System.Linq;
 
 namespace SafeExamBrowser.SystemComponents.Audio
 {

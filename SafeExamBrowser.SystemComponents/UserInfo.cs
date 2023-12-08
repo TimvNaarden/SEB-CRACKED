@@ -6,12 +6,12 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+using SafeExamBrowser.Logging.Contracts;
+using SafeExamBrowser.SystemComponents.Contracts;
 using System;
 using System.Diagnostics;
 using System.Security.Principal;
 using System.Text.RegularExpressions;
-using SafeExamBrowser.Logging.Contracts;
-using SafeExamBrowser.SystemComponents.Contracts;
 
 namespace SafeExamBrowser.SystemComponents
 {

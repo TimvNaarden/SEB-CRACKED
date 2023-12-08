@@ -6,9 +6,9 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System;
 using SafeExamBrowser.SystemComponents.Contracts.Network;
 using SimpleWifi;
+using System;
 
 namespace SafeExamBrowser.SystemComponents.Network
 {

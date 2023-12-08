@@ -6,15 +6,6 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System;
-using System.ComponentModel;
-using System.Reflection;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls.Primitives;
-using System.Windows.Input;
-using System.Windows.Interop;
-using System.Windows.Media.Imaging;
 using SafeExamBrowser.Browser.Contracts.Events;
 using SafeExamBrowser.Core.Contracts.Resources.Icons;
 using SafeExamBrowser.I18n.Contracts;
@@ -28,6 +19,15 @@ using SafeExamBrowser.UserInterface.Contracts.Windows;
 using SafeExamBrowser.UserInterface.Contracts.Windows.Events;
 using SafeExamBrowser.UserInterface.Desktop.Controls.Browser;
 using SafeExamBrowser.UserInterface.Shared.Utilities;
+using System;
+using System.ComponentModel;
+using System.Reflection;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls.Primitives;
+using System.Windows.Input;
+using System.Windows.Interop;
+using System.Windows.Media.Imaging;
 
 namespace SafeExamBrowser.UserInterface.Desktop.Windows
 {

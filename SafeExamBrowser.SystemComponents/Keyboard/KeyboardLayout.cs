@@ -6,9 +6,9 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+using SafeExamBrowser.SystemComponents.Contracts.Keyboard;
 using System;
 using System.Windows.Forms;
-using SafeExamBrowser.SystemComponents.Contracts.Keyboard;
 
 namespace SafeExamBrowser.SystemComponents.Keyboard
 {

@@ -6,11 +6,11 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System;
-using System.Timers;
 using SafeExamBrowser.Logging.Contracts;
 using SafeExamBrowser.SystemComponents.Contracts.PowerSupply;
 using SafeExamBrowser.SystemComponents.Contracts.PowerSupply.Events;
+using System;
+using System.Timers;
 using PowerLineStatus = System.Windows.Forms.PowerLineStatus;
 using SystemInformation = System.Windows.Forms.SystemInformation;
 

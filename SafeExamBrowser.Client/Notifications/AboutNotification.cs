@@ -6,7 +6,6 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System;
 using SafeExamBrowser.Configuration.Contracts;
 using SafeExamBrowser.Core.Contracts.Notifications;
 using SafeExamBrowser.Core.Contracts.Notifications.Events;
@@ -14,6 +13,7 @@ using SafeExamBrowser.Core.Contracts.Resources.Icons;
 using SafeExamBrowser.I18n.Contracts;
 using SafeExamBrowser.UserInterface.Contracts;
 using SafeExamBrowser.UserInterface.Contracts.Windows;
+using System;
 
 namespace SafeExamBrowser.Client.Notifications
 {

@@ -6,11 +6,11 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+using SafeExamBrowser.Configuration.Contracts.DataCompression;
+using SafeExamBrowser.Logging.Contracts;
 using System;
 using System.IO;
 using System.IO.Compression;
-using SafeExamBrowser.Configuration.Contracts.DataCompression;
-using SafeExamBrowser.Logging.Contracts;
 
 namespace SafeExamBrowser.Configuration.DataCompression
 {

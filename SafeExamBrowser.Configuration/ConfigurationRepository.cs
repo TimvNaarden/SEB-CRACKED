@@ -6,10 +6,6 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using SafeExamBrowser.Configuration.ConfigurationData;
 using SafeExamBrowser.Configuration.Contracts;
 using SafeExamBrowser.Configuration.Contracts.Cryptography;
@@ -17,6 +13,10 @@ using SafeExamBrowser.Configuration.Contracts.DataFormats;
 using SafeExamBrowser.Configuration.Contracts.DataResources;
 using SafeExamBrowser.Logging.Contracts;
 using SafeExamBrowser.Settings;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 
 namespace SafeExamBrowser.Configuration
 {

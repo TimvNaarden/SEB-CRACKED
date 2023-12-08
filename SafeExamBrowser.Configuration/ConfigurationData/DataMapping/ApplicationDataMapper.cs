@@ -6,11 +6,11 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+using SafeExamBrowser.Settings;
+using SafeExamBrowser.Settings.Applications;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using SafeExamBrowser.Settings;
-using SafeExamBrowser.Settings.Applications;
 
 namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 {

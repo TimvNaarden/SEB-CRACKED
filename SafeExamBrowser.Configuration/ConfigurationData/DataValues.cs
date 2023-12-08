@@ -6,11 +6,6 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System;
-using System.Diagnostics;
-using System.IO;
-using System.Linq;
-using System.Reflection;
 using SafeExamBrowser.Configuration.Contracts;
 using SafeExamBrowser.Settings;
 using SafeExamBrowser.Settings.Applications;
@@ -21,6 +16,11 @@ using SafeExamBrowser.Settings.Proctoring;
 using SafeExamBrowser.Settings.Security;
 using SafeExamBrowser.Settings.Service;
 using SafeExamBrowser.Settings.UserInterface;
+using System;
+using System.Diagnostics;
+using System.IO;
+using System.Linq;
+using System.Reflection;
 
 namespace SafeExamBrowser.Configuration.ConfigurationData
 {

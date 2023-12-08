@@ -6,6 +6,9 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+using SafeExamBrowser.I18n.Contracts;
+using SafeExamBrowser.SystemComponents.Contracts.Keyboard;
+using SafeExamBrowser.UserInterface.Contracts.Shell;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
@@ -13,9 +16,6 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Media;
-using SafeExamBrowser.I18n.Contracts;
-using SafeExamBrowser.SystemComponents.Contracts.Keyboard;
-using SafeExamBrowser.UserInterface.Contracts.Shell;
 
 namespace SafeExamBrowser.UserInterface.Mobile.Controls.Taskbar
 {

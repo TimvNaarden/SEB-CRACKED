@@ -6,14 +6,14 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System;
-using System.Security.Cryptography;
-using System.Text;
 using SafeExamBrowser.Configuration.Contracts;
 using SafeExamBrowser.Configuration.Contracts.Cryptography;
 using SafeExamBrowser.Configuration.Contracts.Integrity;
 using SafeExamBrowser.Logging.Contracts;
 using SafeExamBrowser.Settings;
+using System;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace SafeExamBrowser.Configuration.Cryptography
 {

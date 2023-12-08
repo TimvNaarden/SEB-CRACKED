@@ -6,16 +6,6 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System;
-using System.Collections.Concurrent;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Net.Http.Headers;
-using System.Text;
-using System.Threading.Tasks;
-using System.Timers;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using SafeExamBrowser.Configuration.Contracts;
@@ -29,6 +19,16 @@ using SafeExamBrowser.Settings.Server;
 using SafeExamBrowser.SystemComponents.Contracts;
 using SafeExamBrowser.SystemComponents.Contracts.Network;
 using SafeExamBrowser.SystemComponents.Contracts.PowerSupply;
+using System;
+using System.Collections.Concurrent;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Text;
+using System.Threading.Tasks;
+using System.Timers;
 using Timer = System.Timers.Timer;
 
 namespace SafeExamBrowser.Server

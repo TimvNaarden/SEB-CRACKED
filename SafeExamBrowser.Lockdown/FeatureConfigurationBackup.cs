@@ -6,14 +6,14 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+using SafeExamBrowser.Lockdown.Contracts;
+using SafeExamBrowser.Logging.Contracts;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
-using SafeExamBrowser.Lockdown.Contracts;
-using SafeExamBrowser.Logging.Contracts;
 
 namespace SafeExamBrowser.Lockdown
 {
@@ -36,7 +36,7 @@ namespace SafeExamBrowser.Lockdown
 			{
 				var configurations = LoadFromFile();
 				var obsolete = configurations.Find(c => c.Id == configuration.Id);
-				
+
 				if (obsolete != default(IFeatureConfiguration))
 				{
 					configurations.Remove(obsolete);

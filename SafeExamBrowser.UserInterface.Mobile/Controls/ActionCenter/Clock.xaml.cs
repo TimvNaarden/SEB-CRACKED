@@ -6,8 +6,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System.Windows.Controls;
 using SafeExamBrowser.UserInterface.Mobile.ViewModels;
+using System.Windows.Controls;
 
 namespace SafeExamBrowser.UserInterface.Mobile.Controls.ActionCenter
 {

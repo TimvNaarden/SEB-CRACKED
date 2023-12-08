@@ -6,12 +6,6 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Management;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using Microsoft.Win32;
 using SafeExamBrowser.Logging.Contracts;
 using SafeExamBrowser.Monitoring.Contracts.Display;
@@ -19,6 +13,12 @@ using SafeExamBrowser.Monitoring.Contracts.Display.Events;
 using SafeExamBrowser.Settings.Monitoring;
 using SafeExamBrowser.SystemComponents.Contracts;
 using SafeExamBrowser.WindowsApi.Contracts;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Management;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 using OperatingSystem = SafeExamBrowser.SystemComponents.Contracts.OperatingSystem;
 
 namespace SafeExamBrowser.Monitoring.Display

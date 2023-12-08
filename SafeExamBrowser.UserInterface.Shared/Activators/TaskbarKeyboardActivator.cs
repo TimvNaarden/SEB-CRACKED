@@ -6,12 +6,12 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-using System.Windows.Input;
 using SafeExamBrowser.Logging.Contracts;
 using SafeExamBrowser.UserInterface.Contracts.Shell;
 using SafeExamBrowser.UserInterface.Contracts.Shell.Events;
 using SafeExamBrowser.WindowsApi.Contracts;
 using SafeExamBrowser.WindowsApi.Contracts.Events;
+using System.Windows.Input;
 
 namespace SafeExamBrowser.UserInterface.Shared.Activators
 {
